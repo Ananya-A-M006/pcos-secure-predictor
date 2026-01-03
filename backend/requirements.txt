@@ -1,0 +1,6 @@
+Django>=4.2
+django-cors-headers
+cryptography
+requests
+djangorestframework
+psycopg2-binary

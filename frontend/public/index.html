@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- App Icon -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#6a5acd" />
+
+    <!-- App Description -->
+    <meta
+      name="description"
+      content="PCOS Secure Predictor - A secure medical screening system using encryption, hashing, and ML-based risk prediction."
+    />
+
+    <!-- App Title -->
+    <title>PCOS Secure Predictor</title>
+
+    <!-- Google Fonts (clean + academic) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Fallback for no JS -->
+    <noscript>
+      You need to enable JavaScript to run this application.
+    </noscript>
+
+    <!-- React mounts here -->
+    <div id="root"></div>
+
+    <!--
+      SECURITY NOTE (for CNS viva):
+      - React UI renders here
+      - No sensitive data stored in HTML
+      - All sensitive logic handled via Django + FastAPI
+    -->
+  </body>
+</html>
