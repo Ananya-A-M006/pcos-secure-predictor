@@ -16,18 +16,14 @@ export default function UserLogin() {
     try {
       const res = await loginUser({ username, password });
 
-      if (res.message === "Login successful") {
-        // 🔐 Store login session (frontend-side)
-        localStorage.setItem(
-          "user",
-          JSON.stringify({
-            username,
-            role: res.role || "user"
-          })
-        );
+    if (res.message === "Login successful") {
+      localStorage.setItem("token", "user-session");
+      localStorage.setItem("role", res.role);
+      localStorage.setItem("username", username);
 
-        navigate("/user/dashboard");
-      }
+      navigate("/user/dashboard");
+    }
+  
     } catch (err) {
       setError("Invalid username or password");
     }
